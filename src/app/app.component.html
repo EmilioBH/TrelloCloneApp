@@ -1,13 +1,6 @@
 <!--Navbar-->
 
-<nav class="navbar navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="../assets/img/trello-mark-white.png" alt="trello icon" height="30" class="d-inline-block align-text-top">
-      Trello-CloneApp
-    </a>
-  </div>
-</nav>
+<app-nav></app-nav>
 
 <!--Trello Body-->
 
@@ -25,16 +18,6 @@
               <span class="badge bg-primary rounded-pill">+</span>
             </li>
 
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Dapibus ac facilisis in
-              <span class="badge bg-primary rounded-pill">+</span>
-            </li>
-
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Morbi leo risus
-              <span class="badge bg-primary rounded-pill">+</span>
-            </li>
-
             <button class="btn btn-outline-primary mt-2">Nueva Tarea</button>
 
           </ul>
@@ -43,7 +26,12 @@
       </div>
 
       <div class="col">
-        <button class="btn btn-outline-light m-5">+ Añadir Tarjeta</button>
+
+        <button (click)="genCard()"
+                class="btn btn-outline-light m-5">
+          + Añadir Tarjeta
+        </button>
+
       </div>
 
     
